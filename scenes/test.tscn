@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/Vie.tscn" type="PackedScene" id=1]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Vie" parent="." instance=ExtResource( 1 )]
+margin_top = 8.0
+margin_bottom = 8.0
+rect_pivot_offset = Vector2( 584, 8 )

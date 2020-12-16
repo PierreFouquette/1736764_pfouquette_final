@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://asset/sprites/munitions/spacebar.jpg" type="Texture" id=1]
+[ext_resource path="res://asset/UI/Button_Quit.png" type="Texture" id=2]
+[ext_resource path="res://asset/UI/Button_Back.png" type="Texture" id=3]
+[ext_resource path="res://scripts/Fin.gd" type="Script" id=4]
+
+[node name="Fin" type="TextureRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 150.0
+rect_scale = Vector2( 1.3748, 0.982753 )
+texture = ExtResource( 1 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Retour" type="MenuButton" parent="."]
+margin_left = 23.6333
+margin_top = 81.404
+margin_right = 536.633
+margin_bottom = 151.404
+rect_scale = Vector2( 0.465607, 0.84145 )
+icon = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quitter" type="MenuButton" parent="."]
+margin_left = 472.665
+margin_top = 81.404
+margin_right = 859.665
+margin_bottom = 151.404
+rect_scale = Vector2( 0.643462, 0.948748 )
+icon = ExtResource( 2 )
+[connection signal="pressed" from="Retour" to="." method="_on_Retour_pressed"]
+[connection signal="pressed" from="Quitter" to="." method="_on_Quitter_pressed"]
